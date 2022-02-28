@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../imagenes/fondo-5.png);
+}
+
+.navbar-brand__img {
+    width: 50px;
+}
+
+h1 {
+    width: fit-content;
+}
+
+h2 {
+    width: fit-content;
+}
+
+.index__iframe {
+    width: 90%;
+    height: 20rem;
+}
