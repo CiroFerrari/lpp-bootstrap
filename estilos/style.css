@@ -7,19 +7,104 @@ body {
     background-image: url(../imagenes/fondo-5.png);
 }
 
+.posicion {
+    top: 0px;
+}
+
 .navbar-brand__img {
     width: 50px;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-h1 {
-    width: fit-content;
+@keyframes rotate {
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-h2 {
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+h1, h2 {
     width: fit-content;
 }
 
 .index__iframe {
     width: 90%;
     height: 20rem;
+}
+
+.index__iframe:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.galeria__body {
+    background-image: url("../imagenes/fondogaleria4.jpg");
+}
+
+.carousel__galeria {
+ 
+}
+
+.nosotros__img {
+    width: 90%;
+    animation-name: escalar;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease;
+}
+
+@keyframes escalar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+        }
+}
+
+.contacto__formulario {
+    border-radius: 25px;
+    width: 85%;
+    height: 25rem;
+}
+
+@media (max-width: 480px) {
+    .index__iframe {
+        height: 15rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .index__iframe {
+        height: 25rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .index__iframe {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel__galeria {
+        width: 50%;
+    }
 }
