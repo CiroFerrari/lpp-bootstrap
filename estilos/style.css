@@ -1,3 +1,4 @@
+/* General */
 * {
     margin: 0px;
     padding: 0px;
@@ -7,7 +8,7 @@ body {
     background-image: url(../imagenes/fondo-5.png);
 }
 
-.posicion {
+.nav__top {
     top: 0px;
 }
 
@@ -41,6 +42,13 @@ h1, h2 {
     width: fit-content;
 }
 
+.anchor {
+    text-decoration: none;
+    color: white;
+}
+
+/* Index y Secciones en orden */
+
 .index__iframe {
     width: 90%;
     height: 20rem;
@@ -51,12 +59,17 @@ h1, h2 {
     transition: 1s;
 }
 
-.galeria__body {
-    background-image: url("../imagenes/fondogaleria4.jpg");
+.servicios__img {
+    width: 80%;
 }
 
-.carousel__galeria {
- 
+.img__ultra {
+    height: 100%;
+    width: 105%;
+}
+
+.galeria__body {
+    background-image: url("../imagenes/fondogaleria4.jpg");
 }
 
 .nosotros__img {
@@ -64,7 +77,6 @@ h1, h2 {
     animation-name: escalar;
     animation-duration: 10s;
     animation-iteration-count: 3;
-    animation-timing-function: ease;
 }
 
 @keyframes escalar {
@@ -79,6 +91,10 @@ h1, h2 {
         }
 }
 
+.contacto__img {
+    width: 90%;
+}
+
 .contacto__formulario {
     border-radius: 25px;
     width: 85%;
@@ -88,6 +104,10 @@ h1, h2 {
 @media (max-width: 480px) {
     .index__iframe {
         height: 15rem;
+    }
+
+    .servicios__img {
+        width: 100%;
     }
 }
 
